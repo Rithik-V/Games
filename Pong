@@ -86,6 +86,7 @@ while True:
     if ball.ycor() > 190:
         ball.dy *= -1
     if ball.xcor() > 390:
+        ball.setx(390)
         ball.dx *= -1
         score_a += 1
         print(score_a)
@@ -94,6 +95,7 @@ while True:
     if ball.ycor() < -190:
         ball.dy *= -1
     if ball.xcor() < -390:
+        ball.setx(-390)
         ball.dx *= -1
         score_b += 1
         print(score_b)
